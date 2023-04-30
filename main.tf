@@ -25,7 +25,6 @@ resource "google_cloudfunctions2_function" "name" {
         repo_source{
         project_id = "cloud-resume-challenge-385006"
         repo_name = "Peterskill-sps-cloud-rc-gcp-backend"
-        branch_name = "main"
         dir = "./Functions"
       }
     }
