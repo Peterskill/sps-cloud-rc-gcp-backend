@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cloud-resume-challenge-385006",
+  "private_key_id": "66396fab8806ebebce2d0194df5b2b77219eea0a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCkcnVdtmxCUmyc\nwXN+LHMRBTUy+0qajhJ6kW1fGPMgSzJU6lO3e4pU5t31Ns/4//RODQYKJ68QbTUC\n0KkC0KxZFlfBHRHfoC64xE3UnVq143lRixhenMdyvKKyL8L4kss7vmVKd1UrNiyV\nFQmZh0Ru5Jmxd/6FpEVDhYzxl5UXa+HZDVhnOSAgFH8kR3YXmXlZaFLM+eLF/Mo1\ni9to3tRkc2sXVb9DTN7+FWFZ7LwLsfaIkygvaPwnlWBUSL9K53S67dnCaXYQBWdv\nds6xB3S4mDDDictG4sDv5xlkrF+sSRVOWnTX0T1/cHD1Yj1N9uOwy161PSGLnqEl\n1GKxHq25AgMBAAECggEABjr77WAC/ARJbyr5KDeg6G0tFdBlhDOLya8G2MqGM5wF\nvSffoh0BIbRZhnfcK0/vPqHJr8rPHC03C/NB5ARp8zogewWR7soP2xo85KhNjoSe\nzRMbCkKgX917wIqEtYxCPPI6vjaFOIzl5YQViAaS9iydEhc8wm113lgJ/gFDOc7i\nBCs+j86P8hPj6lVayqiFWrzldo/aV7Boei1lTN0KKr1w4HsPNzI01cA5V9IfIkw8\nUqQgQv0zrUzIge1Z8bOU1vAIsmZBo8Xsr8rAR74sbj2R3MRo6AXkadrXbNmc/C0b\n4/g+ftyDfXSNxBss5c9BBF7eSjLAv0VnvuuH7D8ynQKBgQDP4zkth0U19DbMvJDR\nFYOHEfJjXOZcxC0B0flHqJaNZLgAgW8KUgyazlaOqDRvESXMTPA221f3GdNmCW7I\n3xbf2//Y5MJPiotSOhsKq0Q5Z4IoltxNV2Uc3gHAGE82VITwy4LPryZvkgSzZhA6\na9ajvcj5qFAwvI8K2e4gVc5rbwKBgQDKgYD+H6gOzzHuYwvLDRXXjJ2bxoulZaOj\naxyu8W0vNI9ugu/qA1pzaUUNC3kauaio9PdKFih1R3JnTNMr0nMDV3fIu/GV3hXs\nnabQ2/W7vO4EomQeHCeBqQQLSFbJRjqztd0PwScbqzm2r+gF3/H5rEs4F2/83oKl\nazaxupEFVwKBgCHa/mfUvMfBot8K4oa6ezYXDSNzcKyw4ieGu5MY+JPEUFb8vUmv\n/Q+FBQGskQV5hG9WJFS6ugOq+AuJA7rA4ifI20zGTILJrFDS166QH8c9fSwBDZWm\n4veljCFtlBDkCNZyPjZ2bssCu7M/rurkvwrhkIZgC9c0DhOVVDt93eUPAoGAa0ua\nsQrM3KvjZM+N3BQe0opqp7LXItdrkJacKAU7OJu8s20k+PS15BiOwY6mqAZe2saQ\nj+yVmy4z64/FA58J2WdqzCzon+N/8lLFpDwnQ0WjR0lTirCYLhcDUYcOlK5lQ/rE\nGijZM8vRVH53jUVOzF8Bq8KfT3gF+OeJnzmexRkCgYAjzIJE6eNVC75N/8dgo/Fk\nYIi9I12cY7PoUU6uQJknJ0ADtLZxwuFuGgD9rD5yKuM69FwUTpq/DzK+IIRB0LfG\nWkf7+UJ/JecWAKh4g8kCB05/zrGrV0uSAHl9sOaWdSAN27D2+LibLN/B+D/SOqaI\naRcVZrIaiFv+gyQqMcr/cA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "terform-cid@cloud-resume-challenge-385006.iam.gserviceaccount.com",
+  "client_id": "105153645784382108411",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terform-cid%40cloud-resume-challenge-385006.iam.gserviceaccount.com"
+}
