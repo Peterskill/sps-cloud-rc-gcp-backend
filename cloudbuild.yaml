@@ -49,4 +49,4 @@ steps:
     args:
     - '-c'
     - |
-        terraform apply -auto-approve -out
+        terraform apply -auto-approve
