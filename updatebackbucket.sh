@@ -1,4 +1,4 @@
-gsutil -q stat gs://sps-backend/
+gsutil -q stat gs://sps-backend/main.py
 
 return_value=$?
 

@@ -24,7 +24,7 @@ resource "google_cloudfunctions2_function" "name" {
     source{
         storage_source {
           bucket = "sps-backend"
-
+          object = "main.py"
         }
 
       }
