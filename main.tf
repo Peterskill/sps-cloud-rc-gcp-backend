@@ -43,6 +43,3 @@ resource "google_cloudfunctions2_function" "name" {
   }
 }
 
-resource "google_n" "name" {
-
-}
