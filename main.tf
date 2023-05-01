@@ -17,7 +17,7 @@ provider "google" {
 
 resource "google_cloudfunctions2_function" "name" {
   name = "vistitor-count"
-  location = "us-central-1"
+  location = "us-central1"
   build_config {
     runtime = "python310"
     entry_point = "get_visitor_number"
