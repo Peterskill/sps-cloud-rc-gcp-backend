@@ -15,27 +15,20 @@ provider "google" {
 }
 
 
-resource "google_cloudfunctions2_function" "name" {
+resource "google_cloudfunctions_function" "name" {
   name = "vistitor-count-2"
   location = "us-central1"
-  build_config {
-    runtime = "python310"
-    entry_point = "get_visitor_number"
-    source{
-        repo_source{
-        project_id = "cloud-resume-challenge-385006"
-        repo_name = "github_peterskill_sps-cloud-rc-gcp-backend"
-        branch_name = "main"
-        dir = "./Functions"
-      }
-    }
+  runtime = "python310"
+  entry_point = "get_visitor_number"
+  event_trigger {
+    event_type = "HTTP"
   }
-
-  service_config {
-    min_instance_count = 0
-    max_instance_count = 100
-    available_memory = "256M"
-    timeout_seconds = 60
+  available_memory_mb= "256"
+  min_instance = 0
+  max_instance = 100
+  timeout = 60
+  source_repository {
+    url = "https://source.cloud.google.com/cloud-resume-challenge-385006/github_peterskill_sps-cloud-rc-gcp-backend"
   }
 
 }
