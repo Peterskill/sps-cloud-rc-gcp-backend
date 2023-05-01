@@ -27,5 +27,6 @@ resource "google_cloudfunctions_function" "name" {
   source_repository {
     url = "https://source.cloud.google.com/cloud-resume-challenge-385006/github_peterskill_sps-cloud-rc-gcp-backend"
   }
+  region = "us-central1"
 
 }
