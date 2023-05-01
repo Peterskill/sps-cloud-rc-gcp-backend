@@ -11,7 +11,7 @@ then
 
 else
     echo "creating new bucket"
-    gsutil mb -l us gs://sps-backend -p cloud-resume-challenge-385006
+    gsutil mb -l us -p cloud-resume-challenge-385006 gs://sps-backend
     echo "syncing files"
     gsutil rsync -d ./Functions gs://sps-backend/
     echo "Done Syncing"
