@@ -19,7 +19,7 @@ resource "google_cloudfunctions_function" "fucntion" {
   name = "vistitor-count-2"
   runtime = "python310"
   available_memory_mb = 256
-  source_archive_bucket = "gs://sps-backend"
+  source_archive_bucket = "sps-backend"
   source_archive_object = "main.py"
   entry_point = "get_visitor_number"
   trigger_http = true
