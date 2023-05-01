@@ -40,7 +40,7 @@ steps:
     - |
         if [ -d "environments/$BRANCH_NAME/" ]; then
           cd environments/$BRANCH_NAME
-          terraform plan
+          terraform plan -out
         else
           for dir in environments/*/
           do
