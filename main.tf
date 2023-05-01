@@ -25,7 +25,7 @@ resource "google_cloudfunctions_function" "name" {
   max_instances = 100
   timeout = 60
   source_repository {
-    url = "https://source.cloud.google.com/cloud-resume-challenge-385006/github_peterskill_sps-cloud-rc-gcp-backend"
+    url = "https://source.cloud.google.com/cloud-resume-challenge-385006/github_peterskill_sps-cloud-rc-gcp-backend/+/main:"
   }
   region = "us-central1"
 
