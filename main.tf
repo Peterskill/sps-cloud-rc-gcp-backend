@@ -17,15 +17,12 @@ provider "google" {
 
 resource "google_cloudfunctions_function" "name" {
   name = "vistitor-count-2"
-  location = "us-central1"
   runtime = "python310"
   entry_point = "get_visitor_number"
-  event_trigger {
-    event_type = "HTTP"
-  }
+  trigger_http = true
   available_memory_mb= "256"
-  min_instance = 0
-  max_instance = 100
+  min_instances = 0
+  max_instances = 100
   timeout = 60
   source_repository {
     url = "https://source.cloud.google.com/cloud-resume-challenge-385006/github_peterskill_sps-cloud-rc-gcp-backend"
