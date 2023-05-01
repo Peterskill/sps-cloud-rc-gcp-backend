@@ -1,4 +1,4 @@
-gsutil -q stat sps-backend
+gsutil -q stat gs://sps-backend
 
 return_value=$?
 
@@ -11,7 +11,7 @@ then
 
 else
     echo "creating new bucket"
-    gsutil mb -l us sps-backend -p cloud-resume-challenge-385006
+    gsutil mb -l us gs://sps-backend -p cloud-resume-challenge-385006
     echo "syncing files"
     gsutil rsync -d ./Functions sps-backend/
     echo "Done Syncing"
