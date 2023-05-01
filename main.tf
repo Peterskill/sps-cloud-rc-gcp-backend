@@ -14,11 +14,6 @@ provider "google" {
 
 }
 
-data "archive_file" "zipping" {
-  type = "zip"
-  source_dir = "gs://sps-backend"
-  output_path = "gs://sps-backend/func.zip"
-}
 
 resource "google_cloudfunctions2_function" "name" {
   name = "vistitor-count-2"
@@ -29,7 +24,7 @@ resource "google_cloudfunctions2_function" "name" {
     source{
         storage_source {
           bucket = "sps-backend"
-          object = "fucn.zip"
+          object = "Functions.zip"
         }
 
       }
