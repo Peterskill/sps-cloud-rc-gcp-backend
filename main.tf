@@ -10,7 +10,7 @@ terraform {
 provider "google" {
     credentials = file("cloud-resume-challenge-385006-66396fab8806.json")
     project = "cloud-resume-challenge-385006"
-    region = ""
+    region = "us-central1"
 
 }
 
