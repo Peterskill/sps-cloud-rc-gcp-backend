@@ -22,11 +22,10 @@ resource "google_cloudfunctions2_function" "name" {
     runtime = "python310"
     entry_point = "get_visitor_number"
     source{
-        repo_source{
-        project_id = "cloud-resume-challenge-385006"
-        repo_name = "github_peterskill_sps-cloud-rc-gcp-backend"
-        branch_name = "main"
-        dir = "Functions"
+        storage_source {
+          bucket = "sps-backend"
+          object = "main.py"
+        }
       }
     }
   }
@@ -38,4 +37,3 @@ resource "google_cloudfunctions2_function" "name" {
     timeout_seconds = 60
   }
 
-}
