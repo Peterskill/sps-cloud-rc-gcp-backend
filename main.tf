@@ -15,26 +15,14 @@ provider "google" {
 }
 
 
-resource "google_cloudfunctions2_function" "name" {
+resource "google_cloudfunctions_function" "fucntion" {
   name = "vistitor-count-2"
-  location = "us-central1"
-  build_config {
-    runtime = "python310"
-    entry_point = "get_visitor_number"
-    source{
-        storage_source {
-          bucket = "sps-backend"
-          object = "main.py"
-        }
-
-      }
-    }
-
-  service_config {
-    min_instance_count = 0
-    max_instance_count = 100
-    available_memory = "256M"
-    timeout_seconds = 60
-  }
+  runtime = "python310"
+  available_memory_mb = 256
+  source_archive_bucket = "gs://sps-backend"
+  source_archive_object = "main.py"
+  entry_point = "get_visitor_number"
+  trigger_http = true
+  region = "us-central1"
 }
 
