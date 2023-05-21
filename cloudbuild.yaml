@@ -17,7 +17,9 @@ steps:
     - '-c'
     - |
         pwd
+        ls
         cd terrafrom
+        pwd
         terraform init
         terraform plan
         terraform apply -auto-approve
