@@ -16,6 +16,7 @@ steps:
     args:
     - '-c'
     - |
+        pwd
         cd terrafrom
         terraform init
         terraform plan
