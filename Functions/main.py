@@ -4,8 +4,8 @@ import functions_framework
 from flask import jsonify
 from google.cloud import firestore
 
-PROJECT = 'cloud-resume-challenge-385006'
-VISITORS_COLLECTION = u'sps-cloud-rc'  
+PROJECT = 'sps-cloud-rc'
+VISITORS_COLLECTION = u'sps-cloud-rc'
 COUNTER_DOCUMENT = u'visitors-count'
 
 
