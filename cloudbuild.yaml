@@ -21,7 +21,7 @@ steps:
         else
           for dir in environments/*/
           do
-            cd terraform
+            cd terrafrom
             env=${dir%*/}
             env=${env#*/}
             echo ""
