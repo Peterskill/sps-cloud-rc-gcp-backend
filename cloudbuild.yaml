@@ -18,6 +18,7 @@ steps:
         cd terrafrom
         terraform init
         terraform plan
+        terraform apply -auto-approve
   # [START tf-plan]
   #/- id: 'tf plan'
   #  name: 'hashicorp/terraform:1.0.0'
