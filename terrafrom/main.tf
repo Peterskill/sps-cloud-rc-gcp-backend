@@ -3,16 +3,11 @@ resource "google_storage_bucket" "Bucket" {
   location = "US"
 }
 
-data "archive_file" "this" {
-  type = "zip"
-  source_file = "${path.module}/main.py"
-  output_path = "main.zip"
-}
 
 resource "google_storage_bucket_object" "archive" {
   name = "main.zip"
   bucket = google_storage_bucket.Bucket.name
-  source = data.archive_file.this.output_path
+  source = "Functions.zip"
 }
 
 
