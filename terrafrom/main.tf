@@ -1,17 +1,8 @@
-terraform {
-  required_providers {
-    google ={
-        source = "hashicorp/google"
-        version = "4.51.0"
-    }
-  }
-}
 
 
 
-data "" "name" {
 
-}
+
 resource "google_cloudfunctions_function" "fucntion" {
   name = "vistitor-count-2"
   runtime = "python310"
