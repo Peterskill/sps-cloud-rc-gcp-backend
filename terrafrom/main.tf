@@ -5,8 +5,8 @@ resource "google_storage_bucket" "Bucket" {
 
 data "archive_file" "this" {
   type = "zip"
-  output_path = "Functions/main.zip"
-  source_file = "Functions/main.py"
+  output_path = "${path.module}/sps-cloud-rc-gcp-backend/Functions/main.zip"
+  source_file = "${path.module}/sps-cloud-rc-gcp-backend/Functions/main.py"
 }
 
 resource "google_storage_bucket_object" "archive" {
