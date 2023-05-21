@@ -8,14 +8,7 @@ steps:
         echo "***********************"
         echo "$BRANCH_NAME"
         echo "***********************"
-  - id: "Update GCS Bucket"
-    name: "gcr.io/cloud-builders/gsutil"
-    entrypoint: 'bash'
-    args:
-    - '-c'
-    - |
-      chmod +x ./updatebackbucket.sh
-      ./updatebackbucket.sh $cloud-resume-challenge-385006
+
   - id: 'tf init'
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: 'sh'
@@ -28,7 +21,7 @@ steps:
         else
           for dir in environments/*/
           do
-            cd ${dir}
+            cd terraform
             env=${dir%*/}
             env=${env#*/}
             echo ""
