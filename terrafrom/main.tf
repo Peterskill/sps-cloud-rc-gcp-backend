@@ -5,8 +5,8 @@ resource "google_storage_bucket" "Bucket" {
 
 data "archive_file" "this" {
   type = "zip"
-  source_file = "${path.module}/Functions/main.py"
-  output_path = "${path.module}/Functions/main.zip"
+  source_file = "${path.module}/main.py"
+  output_path = "${path.module}/main.zip"
 }
 
 resource "google_storage_bucket_object" "archive" {
