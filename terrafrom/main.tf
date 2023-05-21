@@ -5,9 +5,8 @@ resource "google_storage_bucket" "Bucket" {
 
 
 resource "google_storage_bucket_object" "archive" {
-  name = "main.zip"
   bucket = google_storage_bucket.Bucket.name
-  source = "../Functions.zip"
+  source = "../Functions"
 }
 
 
@@ -16,7 +15,7 @@ resource "google_cloudfunctions_function" "fucntion" {
   runtime = "python310"
   available_memory_mb = 256
   source_archive_bucket = google_storage_bucket.Bucket.name
-  source_archive_object = google_storage_bucket_object.archive.name
+  source_archive_object = "main.py"
   max_instances = 1000
   min_instances = 0
   entry_point = "get_visitor_number"
