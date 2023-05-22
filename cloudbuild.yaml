@@ -23,7 +23,7 @@ steps:
         terraform plan
         terraform apply -auto-approve
     options:
-    logging: CLOUD_LOGGING_ONLY
+         logging: CLOUD_LOGGING_ONLY
   # [START tf-plan]
   #/- id: 'tf plan'
   #  name: 'hashicorp/terraform:1.0.0'
