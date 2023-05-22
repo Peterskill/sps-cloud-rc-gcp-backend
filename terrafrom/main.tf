@@ -36,6 +36,6 @@ resource "google_cloudfunctions_function_iam_member" "functioniampolicy" {
   member = "allUsers"
 }
 
-output "http trigger valu" {
+output "http-trigger-valu" {
   value = google_cloudfunctions_function.fucntion.https_trigger_url
 }
