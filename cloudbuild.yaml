@@ -9,7 +9,7 @@ steps:
         echo "$BRANCH_NAME"
         echo "***********************"
     options:
-        logging: CLOUD_LOGGING_ONLY
+    logging: CLOUD_LOGGING_ONLY
   - id: 'tf start'
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: 'sh'
@@ -24,7 +24,7 @@ steps:
         terraform plan
         terraform apply -auto-approve
     options:
-        logging: CLOUD_LOGGING_ONLY
+    logging: CLOUD_LOGGING_ONLY
   # [START tf-plan]
   #/- id: 'tf plan'
   #  name: 'hashicorp/terraform:1.0.0'
