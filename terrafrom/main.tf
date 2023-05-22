@@ -2,17 +2,19 @@ resource "google_storage_bucket" "Bucket" {
   name = "sps-backend"
   location = "US"
 }
+data "archive_file" "archi" {
+  type = "zip"
+  source_dir = "../Funtions"
+  output_path = "../Funtions.zip"
+
+}
 
 resource "google_storage_bucket_object" "archive1" {
-  name = "requirements.txt"
+  name = "Functions.zip"
   bucket = google_storage_bucket.Bucket.name
-  source = "../Functions/requirements.txt"
+  source = "../Functions.zip"
 }
-resource "google_storage_bucket_object" "archive2" {
-  name = "main.py"
-  bucket = google_storage_bucket.Bucket.name
-  source = "../Functions/main.py"
-}
+
 
 
 resource "google_cloudfunctions_function" "fucntion" {
