@@ -4,8 +4,8 @@ resource "google_storage_bucket" "Bucket" {
 }
 data "archive_file" "archi" {
   type = "zip"
-  source_dir = "../Funtions"
-  output_path = "../Funtions.zip"
+  source_dir = "../Functions"
+  output_path = "../Functions.zip"
 
 }
 
