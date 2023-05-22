@@ -22,6 +22,13 @@ steps:
         terraform init
         terraform plan
         terraform apply -auto-approve
+  - id: Permissiosn add
+    name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: sh
+    args:
+      - '-c'
+      - |
+          gcloud functions add-iam-policy-binding visitor-count-2 --member=allUsers --role=roles/cloudfunctions.invoker
 
   # [START tf-plan]
   #/- id: 'tf plan'
