@@ -22,7 +22,7 @@ steps:
         terraform init
         terraform plan
         terraform apply -auto-approve
-    options:
+  options:
          logging: CLOUD_LOGGING_ONLY
   # [START tf-plan]
   #/- id: 'tf plan'
