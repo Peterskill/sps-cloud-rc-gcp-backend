@@ -31,7 +31,7 @@ resource "google_cloudfunctions_function" "fucntion" {
 }
 
 resource "google_cloudfunctions_function_iam_member" "functioniampolicy" {
-  region = "us-central-1"
+  region = "us-central1"
   cloud_function = google_cloudfunctions_function.fucntion.name
   role = "roles/cloudfunctions.invoker"
   member = "allUsers"
