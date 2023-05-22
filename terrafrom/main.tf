@@ -24,7 +24,7 @@ resource "google_cloudfunctions_function" "fucntion" {
   max_instances = 1000
   min_instances = 0
   entry_point = "get_visitor_number"
-  trigger_http = false
+  trigger_http = true
   region = "us-central1"
 }
 
