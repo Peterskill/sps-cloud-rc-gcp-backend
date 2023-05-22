@@ -31,7 +31,8 @@ resource "google_cloudfunctions_function" "fucntion" {
 }
 
 resource "google_cloudfunctions_function_iam_member" "functioniampolicy" {
-  region = "us-central1"
+  project = "sps-cloud-rc"
+  region = google_cloudfunctions_function.fucntion.region
   cloud_function = google_cloudfunctions_function.fucntion.name
   role = "roles/cloudfunctions.invoker"
   member = "allUsers"
