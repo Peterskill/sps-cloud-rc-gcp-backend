@@ -12,7 +12,7 @@ data "archive_file" "archi" {
 resource "google_storage_bucket_object" "archive1" {
   name = "Functions.zip"
   bucket = google_storage_bucket.Bucket.name
-  source = "../Functions.zip"
+  source = data.archive_file.archi.output_path
 }
 
 
