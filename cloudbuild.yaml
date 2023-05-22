@@ -9,18 +9,24 @@ steps:
         echo "$BRANCH_NAME"
         echo "***********************"
 
-  - id: 'tf start'
+  - id: 'terraform work'
     name: 'hashicorp/terraform:1.0.0'
     entrypoint: 'sh'
     args:
     - '-c'
     - |
-        pwd
-        ls
         cd terrafrom
-        pwd
+        echo "***************************"
+        echo "       terraform init"
+        echo "***************************"
         terraform init
+        echo "***************************"
+        echo "       terraform plan"
+        echo "***************************"
         terraform plan
+        echo "***************************"
+        echo "       terraform apply"
+        echo "***************************"
         terraform apply -auto-approve
 
   # [START tf-plan]
